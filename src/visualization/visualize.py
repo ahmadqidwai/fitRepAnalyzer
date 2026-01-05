@@ -1,3 +1,14 @@
+from pathlib import Path
+import pandas as pd
+
+BASE_DIR = Path(__file__).resolve().parents[2]
+DATA_PATH = BASE_DIR / "data" / "interim" / "01_data_processed.pkl"
+
+df = pd.read_pickle(DATA_PATH)
+
+
+
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib as mpl
@@ -5,7 +16,7 @@ import matplotlib as mpl
 # --------------------------------------------------------------
 # Load data
 # --------------------------------------------------------------
-df = pd.read_pickle("../../data/interim/01_data_processed.pkl")
+#df = pd.read_pickle("../../data/interim/01_data_processed.pkl")
 
 # --------------------------------------------------------------
 # Plot single columns
